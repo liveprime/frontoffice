@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      TestFirebase
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form  [formGroup]="testForm">>
+
+    <ion-item>
+      <ion-label>
+        Id
+      </ion-label>
+      <ion-input formControlName="id" type="text" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Contenu
+      </ion-label>
+      <ion-input formControlName="contenu" type="text" ></ion-input>
+    </ion-item>
+  </form>
+
+    <button ion-button color="positive" (click)='getData()' block>
+      Tap me!
+    </button>
+    <div class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        is databinding working?
+      </p>
+    </div>
+    <ion-item class="input">
+      <ion-label>
+        Output DataBinding
+      </ion-label>
+
+    </ion-item>
+
+      <button ion-button color="positive" (click)='read()' block>
+        Tap me to read!
+      </button>
+      <div class="show-list-numbers-and-dots">
+        <p style="color:#000000;">
+          is Database read working?
+        </p>
+      </div>
+      <ion-item class="input">
+        <ion-label>
+          Output Database Read
+        </ion-label>
+        
+      </ion-item>
+
+
+    <button ion-button color="positive" (click)='save()' block>
+      Tap me to write!
+    </button>
+
+
+
+</ion-content>
